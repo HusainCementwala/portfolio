@@ -29,7 +29,7 @@
 
 .nav-menu li:hover {
   transform: translateY(-5px); /* Slight upward motion */
-  color: #ff8c20; /* Change text color */
+  color: rgb(255, 140, 32); /* Change text color */
 }
 
 .nav-menu li::after {
@@ -66,7 +66,7 @@
 
 .name-logo{
 
-  width:165px;
+  width:200px;
   margin-top: 10px;
   transition: 0.3s;
 }

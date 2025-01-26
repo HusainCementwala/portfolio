@@ -1,0 +1,91 @@
+.mywork{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+margin: 80px 170px;
+}
+
+.mywork-title{
+
+  position: relative;
+  
+}
+
+.mywork-title h1{
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+.mywork-title img{
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+}
+
+.mywork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equally spaced columns */
+  gap: 40px;
+  perspective: 1000px; /* Enables 3D space for child elements */
+}
+
+.mywork-container img {
+  box-sizing: border-box;
+  width: 100%; /* Auto-adjusts to container size */
+  height: 100%; /* Maintains proportions within the grid */
+  border-radius: 12px; /* Rounded corners for a clean look */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+  transform-origin: center; /* Ensures the effect pivots around the center */
+}
+
+.mywork-container img:hover {
+  transform: scale(1.1) ; /* Adds zoom and 3D rotation */
+  box-shadow: 0 15px 30px rgba(255, 30, 180, 0.4); /* Depth with shadow */
+}
+
+/* Optional: Add a "reset" hover effect to the grid container */
+.mywork-container:hover img:not(:hover) {
+  transform: scale(1) rotateX(0deg) rotateY(0deg); /* Resets other items to normal */
+  filter: brightness(0.8); /* Adds focus to the hovered image */
+}
+
+.mywork-showmore {
+  display: flex;
+  gap: 15px;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 30px 60px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 80px;
+  transition: 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+  position: relative;
+}
+
+.mywork-showmore:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  box-shadow: 0 8px 15px rgba(255, 140, 32, 0.6); /* Add shadow on hover */
+}
+
+.mywork-showmore:active {
+  transform: scale(1); /* Scale back to normal when clicked */
+  box-shadow: 0 4px 15px rgba(255, 30, 180, 0.6); /* Lighter shadow when clicked */
+}
+
+
+
+
+
+
+
+
+
+
