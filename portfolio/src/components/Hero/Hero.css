@@ -8,7 +8,7 @@
 }
 
 .hero img {
-  margin-top: 50px;
+  margin-top: 60px;
   width: 250px;
   border-radius: 50%;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out, border 0.3s ease-in-out; /* Smooth transition for hover effects */
@@ -35,6 +35,7 @@
   font-size: 50px;
   font-weight: 600;
   line-height: 74px;
+  margin-bottom: 20px;
 }
 
 .hero h1 span{
@@ -70,12 +71,12 @@
   gap: 25px;
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 
 }
 
 
-.hero-connect {
+.hero-resume {
   padding: 22px 40px;
   border-radius: 50px;
   background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.29%);
@@ -89,12 +90,12 @@
   overflow: hidden;
 }
 
-.hero-connect:hover {
+.hero-resume:hover {
   transform: scale(1.1); /* Slightly enlarge the button */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.7); /* Add glow */
 }
 
-.hero-connect:hover::before {
+.hero-resume:hover::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -108,13 +109,13 @@
   animation: rippleEffect 0.8s ease-out;
 }
 
-.hero-connect:active {
+.hero-resume:active {
   transform: scale(0.95); /* Shrinks slightly for a tactile effect */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   background: linear-gradient(264deg, #b415ff 0%, #df8908 100%);
 }
 
-.hero-connect:active::before {
+.hero-resume:active::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -147,7 +148,7 @@
 }
 
 
-.hero-resume {
+.hero-github {
   padding: 20px 40px;
   border-radius: 50px;
   border: 2px solid white;
@@ -161,14 +162,14 @@
   transition: all 0.3s ease-in-out;
 }
 
-.hero-resume:hover {
+.hero-github:hover {
   background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0.15) 100%);
   color: #000;
   border-color: #161513;
   transform: scale(1.1);
 }
 
-.hero-resume::before {
+.hero-github::before {
   content: '';
   position: absolute;
   top: 0;
@@ -180,20 +181,20 @@
   transform: skewX(-30deg);
 }
 
-.hero-resume:hover::before {
+.hero-github:hover::before {
   left: 150%;
  
   transition: 0.8s ease-in-out;
 }
 
-.hero-resume:active {
+.hero-github:active {
   transform: scale(0.95); /* Press-down effect */
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
-.hero-resume:active::before {
+.hero-github:active::before {
   left: -5;
   background: rgba(255, 255, 255, 0.5);
   transition: none;

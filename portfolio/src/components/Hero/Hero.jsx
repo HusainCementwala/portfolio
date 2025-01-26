@@ -5,7 +5,7 @@ import profile_img from '../../assets/profile_img.svg'
 const Hero = () => {
   return (
     <div>
-      <div className="hero">
+      <div id='home' className="hero">
 
         <img src={profile_img} alt="" />
         <h1><span>I'm Husain Cementwala,</span> <br></br>Frontend Developer based in Mumbai.</h1>
@@ -13,8 +13,8 @@ const Hero = () => {
 
         <div className="hero-action">
 
-          <div className="hero-connect">RESUME</div>
-          <div className='hero-resume'>GITHUB</div>
+          <div className="hero-resume">MY RESUME</div>
+          <div className='hero-github'>GITHUB</div>
           
         </div>
         
