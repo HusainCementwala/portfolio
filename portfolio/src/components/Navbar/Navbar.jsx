@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import menu_open from '../../assets/menu_open.svg'
+import menu_close from '../../assets/menu_close.svg'
 
 
 const Navbar = () => {
@@ -14,8 +16,12 @@ const Navbar = () => {
     <div className='navbar'>
 
       <img src={logo} alt="logo" className='name-logo'/>
+      <img src={menu_open} alt="" /> 
 
       <ul className="nav-menu">
+
+        <img src={menu_close} alt="" className="nav-mob-close" />
+
         <li><AnchorLink className='anchor-link' href='#home' ><p onClick={()=>setMenu("home")}>Home</p></AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#about' ><p onClick={()=>setMenu("about")}>About Me</p></AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#services' ><p onClick={()=>setMenu("services")}>Services</p></AnchorLink></li>

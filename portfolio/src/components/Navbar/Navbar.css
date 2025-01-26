@@ -1,5 +1,4 @@
 .navbar{
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,17 +6,11 @@
 }
 
 .anchor-link{
-
   text-decoration: none;
   color: white;
- 
 }
 
-
-
-
 .nav-menu{
-
   display: flex;
   align-items: center;
   list-style: none;
@@ -57,14 +50,12 @@
 }
 
 .button-connect{
-
   text-decoration: none;
   color: white;
   font-size: 22px;
 }
 
 .nav-connect{
-
   padding: 20px 35px;
   border-radius: 50px;
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
@@ -74,19 +65,26 @@
 }
 
 .nav-connect:hover{
-
   transform: scale(1.05);
 }
 
 .name-logo{
-
   width:200px;
   margin-top: 10px;
   transition: 0.3s;
 }
 
 .name-logo:hover{
-
   transform: scale(1.1);
   cursor: pointer;
+}
+
+
+@media (max-width:768px) {
+
+  .navbar{
+
+    margin: 20px 50px;
+  }
+  
 }
