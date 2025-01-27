@@ -106,3 +106,29 @@ gap: 30px;
   color: rgb(138, 138, 138);
 }
 
+
+@media(max-width:768px) {
+
+  .footer{
+    margin: 50px 70px;
+  }
+
+  .footer-top{
+    flex-direction: column;
+    gap: 50px;
+
+  }
+
+  .footer-bottom{
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .footer-bottom p{
+
+    margin-bottom: 20px;
+  }
+  
+}
+
